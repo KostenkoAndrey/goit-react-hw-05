@@ -30,7 +30,7 @@ useEffect( ()=>{
     <h2 className={s.title}>Trending today</h2>
     { loading && <Loader/> }
     { error && <p className={s.error}>Something went wrong...</p> }
-    <MovieList trendsMovie={movie}/>
+    <MovieList movieFetch={movie}/>
   </div>
   )};
 

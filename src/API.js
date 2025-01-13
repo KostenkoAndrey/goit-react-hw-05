@@ -4,17 +4,13 @@ const API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwODVmN2U1OTAzYmQ4ODgxOTFkMTI4MT
 axios.defaults.baseURL = "https://api.themoviedb.org";
 
 const options = {
-    headers: {
-    Authorization: `Bearer ${API_KEY}`
+headers: {
+Authorization: `Bearer ${API_KEY}`
     },
-    language: "en-US",
-    include_adult: false 
 };
 
 export const fetchData = async ( URl, params = {} ) => {
     const { data } = await axios.get(URl, { ...options, params }); 
     return data;
-    
-    
 }
 

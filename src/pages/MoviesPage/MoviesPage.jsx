@@ -17,9 +17,11 @@ const query = searchParams.get("query") ?? "";
 
 const search = (value) =>{
 if(!value.query){ return setSearchParams({}) };
-setSearchParams(value);
+searchParams.set("query", value.query);
+searchParams.set("language", "en-US");
+searchParams.set("include_adult", false);
+setSearchParams(searchParams);
 };
-
 
 useEffect(()=>{
   (async ()=>{
@@ -44,7 +46,7 @@ useEffect(()=>{
     <SearchBar search={search} query={query}/>
     { loading && <Loader /> }
     { error && <p className={s.error}>Something went wrong...</p> }
-    <MovieList trendsMovie={movie}/>
+    <MovieList movieFetch={movie}/>
     </>
   )
 }

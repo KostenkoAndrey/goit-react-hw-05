@@ -45,8 +45,8 @@ const { genres, backdrop_path, original_title, vote_average, overview } = movieD
       <p>Additional Information</p>
       <nav>
       <ul className={s.navDescription}>
-        <li><Link to="MovieCast">Cast</Link></li>
-        <li><Link to="MovieReviews">Review</Link></li>
+        <li><Link to="cast">Cast</Link></li>
+        <li><Link to="reviews">Review</Link></li>
       </ul>
       </nav>
     </div>   
