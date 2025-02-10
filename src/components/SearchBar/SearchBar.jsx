@@ -15,7 +15,7 @@ const handleSubmit = ( value ) => search(value);
     onSubmit={handleSubmit}>
       <Form className={s.searchForm}>
         <Field  type="text" name="query" className={s.searchInput}/>
-        <button type="submit" className={s.searchBtn}>Add contact</button>
+        <button type="submit" className={s.searchBtn}>Search</button>
       </Form>  
       </Formik>)
       };
