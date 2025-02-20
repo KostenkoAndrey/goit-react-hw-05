@@ -1,0 +1,56 @@
+.movieList{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 0 10px;
+}
+
+.movieListItem{
+flex-basis: calc(100% / 1);
+overflow: hidden;
+border-radius: 24px;
+}
+
+.descriptionContainer{
+height: 60px;
+padding: 10px;
+color: black;
+background-color: rgb(188, 185, 185);
+}
+
+.desctext{
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block; 
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+.movieList{
+  gap: 28px;
+  padding: 0 20px;
+}
+
+  .movieListItem{
+    flex-basis: calc((100% - 28px) / 2);
+    transition: transform 0.3s ease;
+  }
+
+  .movieListItem:hover{
+transform: scale(1.05); 
+}
+  }
+
+  @media screen and (min-width: 1280px) {
+    .movieList{
+      gap: 20px;
+      padding: 0 28px;
+    }
+    
+    .movieListItem{
+      flex-basis: calc((100% - 60px) / 4);
+      }
+      }

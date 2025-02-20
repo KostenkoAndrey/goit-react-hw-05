@@ -1,0 +1,15 @@
+.reviewList{
+padding: 12px 24px;
+}
+
+.itemReview{
+    padding: 6px;
+margin-bottom: 12px;
+border: 1px solid black;
+border-radius: 12px;
+}
+
+.reviewAuthor{
+font-weight: 700;
+margin-bottom: 6px;
+}

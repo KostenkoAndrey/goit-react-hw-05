@@ -1,0 +1,18 @@
+.navList{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 24px;
+    box-shadow: 2px 2px 3px 3px grey;
+}
+.navItem{
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+.active{
+    color: red;
+    text-decoration: underline;
+}

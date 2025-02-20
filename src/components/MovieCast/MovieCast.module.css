@@ -1,0 +1,43 @@
+.castList{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+padding: 10px;
+}
+
+.castItem{
+border-radius: 24px;
+overflow: hidden;
+}
+    
+.castPictCont{
+width: 100%;
+}
+
+.castDescCont{
+    padding: 4px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    background-color:rgb(240, 241, 240);
+}  
+
+@media screen and (min-width: 768px) {
+    .castList{
+        gap: 28px;
+        padding: 20px;
+        }
+   .castItem{
+    flex-basis: calc((100% - 28px) / 2);
+   }
+    } 
+
+    @media screen and (min-width: 1280px) {
+        .castList{
+            gap: 20px;
+            padding: 10px;
+            }
+       .castItem{
+        flex-basis: calc((100% - 60px) / 4);
+       }
+        } 
